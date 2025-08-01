@@ -1,0 +1,9 @@
+.item {
+    border-bottom: 1px solid var(--borderColor);
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+.item:first-child {
+    border-top: 1px solid var(--borderColor);
+}
+ 

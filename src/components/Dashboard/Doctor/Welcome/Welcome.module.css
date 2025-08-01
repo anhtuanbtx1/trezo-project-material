@@ -1,0 +1,136 @@
+.doctorWelcomeCard {
+     padding: 8px 50px 0 50px; 
+     position: relative;
+     border-radius: 7px;
+     margin-bottom: 25px;
+}
+.doctorWelcomeCard .trezoCardContent .content {
+     padding-top: 40px;
+}
+.doctorWelcomeCard .trezoCardContent .content .subTitle {
+     font-size: 18px;
+     margin-bottom: 2px;
+     display: block;
+     color: #fff;
+}
+.doctorWelcomeCard .trezoCardContent .content h1 {
+     margin-bottom: 6px;
+     font-size: 28px;
+     font-weight: 900;
+}
+.doctorWelcomeCard .trezoCardContent .content .designation {
+     font-size: 12px;
+     padding-left: 20px;
+     margin-bottom: 9px;
+     color: #fff;
+     font-weight: 500;
+     display: inline-block;
+     text-transform: uppercase;
+     position: relative;
+}
+.doctorWelcomeCard .trezoCardContent .content .designation img {
+     left: 0;
+     top: 50%;
+     position: absolute;
+     transform: translateY(-50%);
+}
+.doctorWelcomeCard .trezoCardContent .content p {
+     color: #B1BBC8;
+}
+.doctorWelcomeCard .trezoCardContent .content p span {
+     color: #fff;
+}
+.doctorWelcomeCard .trezoCardContent .image {
+     text-align: end;
+}
+.doctorWelcomeCard .shape {
+     right: 0;
+     bottom: 0;
+     z-index: 0;
+     position: absolute;
+}
+.doctorWelcomeCard .star {
+     top: 60px;
+     right: 85px;
+     z-index: 0;
+     position: absolute;
+}
+
+/* RTL Style */
+[dir="rtl"] .doctorWelcomeCard .shape {
+     transform: scaleX(-1);
+     right: auto;
+     left: 0;
+}
+[dir="rtl"] .doctorWelcomeCard .star {
+     transform: scaleX(-1);
+     right: auto;
+     left: 85px;
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+     .doctorWelcomeCard {
+          padding: 25px 17px 0;
+          text-align: center;
+     }
+     .doctorWelcomeCard .trezoCardContent .content {
+          padding-top: 0;
+     }
+     .doctorWelcomeCard .trezoCardContent .content .subTitle {
+          font-size: 14px;
+     }
+     .doctorWelcomeCard .trezoCardContent .content h1 {
+          font-size: 22px;
+     }
+     .doctorWelcomeCard .trezoCardContent .image {
+          margin-top: 15px;
+          text-align: center;
+     }
+     .doctorWelcomeCard .star {
+          display: none;
+     }
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+     .doctorWelcomeCard {
+          padding: 25px 20px 0;
+     }
+}
+
+/* Min width 768px to Max width 899px */
+@media only screen and (min-width: 768px) and (max-width: 899px) {
+     .doctorWelcomeCard {
+          padding-top: 40px;
+     }
+     .doctorWelcomeCard .trezoCardContent .content {
+          padding-top: 0;
+          text-align: center;
+     }
+     .doctorWelcomeCard .trezoCardContent .content .subTitle {
+          font-size: 16px;
+     }
+     .doctorWelcomeCard .trezoCardContent .content h1 {
+          font-size: 24px;
+     }
+     .doctorWelcomeCard .trezoCardContent .image {
+          margin-top: 15px;
+          text-align: center;
+     }
+     .doctorWelcomeCard .star {
+          display: none;
+     }
+}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {
+     .doctorWelcomeCard {
+          padding-left: 105px;
+          padding-right: 80px;
+     }
+     [dir="rtl"] .doctorWelcomeCard {
+          padding-left: 80px;
+          padding-right: 105px;
+     }
+}

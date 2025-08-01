@@ -1,0 +1,50 @@
+.shape {
+     top: 30px;
+     right: 30px;
+     position: absolute;
+}
+
+.pTable thead tr th:first-child {
+     padding-left: 0;
+}
+.pTable thead tr th:last-child {
+     padding-right: 0;
+}
+.pTable tbody tr td:first-child {
+     padding-left: 0;
+}
+.pTable tbody tr td:last-child {
+     padding-right: 0;
+}
+.pTable tfoot tr td {
+     padding-top: 15px;
+}
+.pTable tfoot tr td div {
+     min-height: auto;
+}
+
+/* RTL Style */
+[dir="rtl"] .pTable thead tr th:first-child {
+     padding-left: 14px;
+     padding-right: 0;
+}
+[dir="rtl"] .pTable thead tr th:last-child {
+     padding-left: 0;
+     padding-right: 14px;
+}
+[dir="rtl"] .pTable tbody tr td:first-child {
+     padding-left: 14px;
+     padding-right: 0;
+}
+[dir="rtl"] .pTable tbody tr td:last-child {
+     padding-right: 14px;
+     padding-left: 0;
+}
+  
+/* RTL Style */
+[dir="rtl"] .shape { 
+     right: auto; 
+     left: 30px;
+}
+ 
+ 

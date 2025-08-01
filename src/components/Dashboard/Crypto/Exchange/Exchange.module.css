@@ -1,0 +1,14 @@
+.price {
+     position: absolute;
+     top: 17px;
+     right: 15px;
+}
+
+/* RTL Style */
+[dir="rtl"] .pTable thead tr th:first-child {
+     padding-left: 14px;
+     padding-right: 0;
+}
+ 
+ 
+ 

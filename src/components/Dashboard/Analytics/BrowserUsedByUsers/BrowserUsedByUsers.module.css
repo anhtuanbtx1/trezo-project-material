@@ -1,0 +1,36 @@
+.usersTable thead tr th:first-child {
+   padding-left: 0;
+}
+.usersTable thead tr th:last-child {
+     padding-right: 0;
+}
+.usersTable tbody tr td:first-child {
+     padding-left: 0;
+}
+.usersTable tbody tr td:last-child {
+     padding-right: 0;
+}
+.usersTable tfoot tr td {
+     padding-top: 15px;
+}
+.usersTable tfoot tr td div {
+     min-height: auto;
+}
+
+/* RTL Style */
+[dir="rtl"] .usersTable thead tr th:first-child {
+     padding-left: 14px;
+     padding-right: 0;
+}
+[dir="rtl"] .usersTable thead tr th:last-child {
+     padding-left: 0;
+     padding-right: 14px;
+}
+[dir="rtl"] .usersTable tbody tr td:first-child {
+     padding-left: 14px;
+     padding-right: 0;
+}
+[dir="rtl"] .usersTable tbody tr td:last-child {
+     padding-right: 14px;
+     padding-left: 0;
+}

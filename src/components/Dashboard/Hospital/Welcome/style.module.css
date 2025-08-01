@@ -1,0 +1,40 @@
+.salesWelcomeCard::before {
+  top: 0;
+  right: 0;
+  z-index: 0;
+  content: '';
+  width: 147px;
+  height: 89px;
+  position: absolute;
+  background-image: url(/public/images/vector1.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.salesWelcomeCard::after {
+  right: 0;
+  top: auto;
+  bottom: 0;
+  left: auto;
+  z-index: 0;
+  content: '';
+  width: 170px;
+  height: 84px;
+  border-width: 0;
+  border-radius: 0;
+  position: absolute;
+  background-image: url(/public/images/vector2.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* RTL Style */
+[dir="rtl"] .salesWelcomeCard::before {
+  right: auto;
+  left: 0;
+}
+[dir="rtl"] .salesWelcomeCard::after {
+  right: auto;
+  left: 0;
+}

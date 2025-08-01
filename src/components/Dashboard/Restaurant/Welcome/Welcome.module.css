@@ -1,0 +1,204 @@
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.restaurantWelcomeCard {
+  background-color: #FE7A36;
+  margin-bottom: 25px;
+  border-radius: 7px; 
+  padding: 25px;
+}
+.restaurantWelcomeCard .trezoCardContent {
+  padding-top: 23.5px;
+  padding-bottom: 23.5px;
+}
+.restaurantWelcomeCard .trezoCardContent .content {
+  margin-right: -55px;
+}
+.restaurantWelcomeCard .trezoCardContent .content .subTitle {
+  font-size: 16px;
+  color: #FFE8D4;
+  padding: 1px 13px;
+  margin-bottom: 12px;
+  background-color: var(--darkColor);
+  font-weight: 500;
+  display: inline-block;
+}
+.restaurantWelcomeCard .trezoCardContent .content h1 {
+  font-size: 28px;
+  margin-bottom: 0;
+  letter-spacing: -0.5px;
+  color: #fff;
+  line-height: 1.2;
+}
+.restaurantWelcomeCard .trezoCardContent .content .stats {
+  margin-top: 25px;
+  gap: 25px;
+  display: flex;
+  align-items: center;
+}
+.restaurantWelcomeCard .trezoCardContent .content .stats .item {
+  padding-left: 33px;
+  position: relative;
+}
+.restaurantWelcomeCard .trezoCardContent .content .stats .item i {
+  color: var(--whiteColor);
+  position: absolute;
+  top: 2px;
+  left: 0;
+}
+.restaurantWelcomeCard .trezoCardContent .content .stats .item h6 {
+  font-size: 16px;
+  margin-top: 3px;
+  margin-bottom: 0;
+  line-height: 1;
+}
+.restaurantWelcomeCard .trezoCardContent .image {
+  text-align: end;
+  max-width: 217px;
+  margin-left: auto;
+  padding-top: 10px;
+  padding-right: 22px;
+  padding-bottom: 10px;
+  position: relative;
+}
+.restaurantWelcomeCard .trezoCardContent .image .mainImage {
+  animation: spin 5s linear infinite;
+}
+.restaurantWelcomeCard .trezoCardContent .image .shape1 {
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+.restaurantWelcomeCard .trezoCardContent .image .shape2 {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+/* RTL */
+[dir="rtl"] .trezoCardContent .content {
+  margin-right: 0;
+  margin-left: -55px;
+}
+[dir="rtl"] .trezoCardContent .content .stats .item {
+  padding-left: 0;
+  padding-right: 33px;
+}
+[dir="rtl"] .trezoCardContent .content .stats .item i {
+  right: 0;
+  left: auto;
+}
+[dir="rtl"] .trezoCardContent .image {
+  margin-right: auto;
+  margin-left: 0;
+  padding-right: 0;
+  padding-left: 22px;
+}
+[dir="rtl"] .trezoCardContent .image .shape1 {
+  transform: scaleX(-1);
+  right: auto;
+  left: 0;
+}
+[dir="rtl"] .trezoCardContent .image .shape2 {
+  transform: scaleX(-1);
+  left: auto;
+  right: 0;
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+
+  .restaurantWelcomeCard .trezoCardContent {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .restaurantWelcomeCard .trezoCardContent .content {
+    margin-right: 0;
+    margin-bottom: 17px;
+  }
+  .restaurantWelcomeCard .trezoCardContent .content .subTitle {
+    font-size: 14px;
+  }
+  .restaurantWelcomeCard .trezoCardContent .content h1 {
+    font-size: 24px;
+  }
+  .restaurantWelcomeCard .trezoCardContent .content .stats {
+    justify-content: center;
+    margin-top: 12px;
+    gap: 17px;
+  }
+  .restaurantWelcomeCard .trezoCardContent .image {
+    text-align: center;
+    margin-right: auto;
+  }
+
+  /* RTL */
+  [dir="rtl"] .trezoCardContent .content {
+    margin-left: 0;
+  }
+  [dir="rtl"] .trezoCardContent .image {
+    margin-left: auto;
+  }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+  .restaurantWelcomeCard .trezoCardContent .content {
+    margin-bottom: 20px;
+  }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+  .restaurantWelcomeCard .trezoCardContent {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .restaurantWelcomeCard .trezoCardContent .content {
+    margin-right: 0;
+  }
+  .restaurantWelcomeCard .trezoCardContent .content h1 {
+    font-size: 26px;
+  }
+  .restaurantWelcomeCard .trezoCardContent .content .stats {
+    margin-top: 20px;
+  }
+
+  /* RTL */
+  [dir="rtl"] .trezoCardContent .content {
+    margin-left: 0;
+  }
+
+}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {
+
+  .restaurantWelcomeCard .trezoCardContent .content {
+    max-width: 330px;
+    margin-right: 0;
+  }
+  .restaurantWelcomeCard .trezoCardContent .content h1 {
+    font-size: 32px;
+  }
+  .restaurantWelcomeCard .trezoCardContent .content .stats {
+    gap: 40px;
+  }
+
+  /* RTL */
+  [dir="rtl"] .trezoCardContent .content {
+    margin-left: 0;
+  }
+
+}

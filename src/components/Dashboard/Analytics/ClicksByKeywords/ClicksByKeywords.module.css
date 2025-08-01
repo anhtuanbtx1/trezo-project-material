@@ -1,0 +1,36 @@
+.cikTable thead tr th:first-child {
+   padding-left: 0;
+}
+.cikTable thead tr th:last-child {
+     padding-right: 0;
+}
+.cikTable tbody tr td:first-child {
+     padding-left: 0;
+}
+.cikTable tbody tr td:last-child {
+     padding-right: 0;
+}
+.cikTable tfoot tr td {
+     padding-top: 15px;
+}
+.cikTable tfoot tr td div {
+     min-height: auto;
+}
+ 
+/* RTL Style */
+[dir="rtl"] .cikTable thead tr th:first-child {
+     padding-left: 14px;
+     padding-right: 0;
+}
+[dir="rtl"] .cikTable thead tr th:last-child {
+     padding-left: 0;
+     padding-right: 14px;
+}
+[dir="rtl"] .cikTable tbody tr td:first-child {
+     padding-left: 14px;
+     padding-right: 0;
+}
+[dir="rtl"] .cikTable tbody tr td:last-child {
+     padding-right: 14px;
+     padding-left: 0;
+}

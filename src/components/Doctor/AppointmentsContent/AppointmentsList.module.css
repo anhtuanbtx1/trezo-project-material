@@ -1,0 +1,101 @@
+.appointmentsList {
+  padding-left: 40px;
+  position: relative;
+}
+.appointmentsList .appointmentItem {
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #DDE4FF;
+  position: relative;
+  z-index: 1;
+  border-radius: 7px; 
+}
+.appointmentsList .appointmentItem .icon {
+  top: 50%;
+  left: -40px;
+  position: absolute;
+  transform: translateY(-50%);
+}
+.appointmentsList .appointmentItem .shape {
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 0;
+  margin-right: auto;
+  margin-right: auto; 
+}
+.appointmentsList .appointmentItem p {
+  margin-bottom: 10px;
+}
+.appointmentsList .appointmentItem .btnPrimary {
+  background-color: var(--whiteColor);
+  border-color: var(--whiteColor);
+  color: var(--primaryColor);
+}
+.appointmentsList .appointmentItem .btnPrimary:hover {
+  color: var(--whiteColor);
+  border-color: var(--primaryColor);
+  background-color: var(--primaryColor);
+}
+.appointmentsList .appointmentItem:first-child {
+  margin-top: 0;
+}
+.appointmentsList .appointmentItem:first-child::before {
+  margin-top: 0;
+}
+.appointmentsList .appointmentItem:nth-child(2), .appointmentsList .appointmentItem:nth-child(5) {
+  background-color: #C8FFE1;
+}
+.appointmentsList .appointmentItem:nth-child(2) .btnPrimary, .appointmentsList .appointmentItem:nth-child(5) .btnPrimary {
+  color: var(--successColor);
+}
+.appointmentsList .appointmentItem:nth-child(2) .btnPrimary:hover, .appointmentsList .appointmentItem:nth-child(5) .btnPrimary:hover {
+  color: var(--whiteColor);
+  border-color: var(--successColor);
+  background-color: var(--successColor);
+}
+.appointmentsList .appointmentItem:nth-child(3), .appointmentsList .appointmentItem:nth-child(6) {
+  background-color: #DAEBFF;
+}
+.appointmentsList .appointmentItem:nth-child(3) .btnPrimary, .appointmentsList .appointmentItem:nth-child(6) .btnPrimary {
+  color: var(--secondaryColor);
+}
+.appointmentsList .appointmentItem:nth-child(3) .btnPrimary:hover, .appointmentsList .appointmentItem:nth-child(6) .btnPrimary:hover {
+  color: var(--whiteColor);
+  border-color: var(--secondaryColor);
+  background-color: var(--secondaryColor);
+}
+.appointmentsList::before {
+  top: 0;
+  bottom: 0;
+  left: 12px;
+  width: 1px;
+  content: '';
+  position: absolute;
+  background: var(--borderColor);
+}
+
+[class="dark-theme"] .appointmentsList::before {
+  background: #333;
+}
+
+[dir="rtl"] .appointmentsList {
+  padding-left: 0;
+  padding-right: 40px;
+}
+[dir="rtl"] .appointmentsList .appointmentItem .icon {
+  left: auto;
+  right: -40px;
+}
+[dir="rtl"] .appointmentsList::before {
+  right: 12px;
+  left: auto;
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+  .appointmentsList .appointmentItem .btnPrimary {
+    margin-top: 15px;
+  }
+}

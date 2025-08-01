@@ -1,0 +1,14 @@
+.shape {
+     top: 0;
+     right: 0;
+     position: absolute;
+}
+  
+/* RTL Style */
+[dir="rtl"] .shape { 
+     right: auto; 
+     left: 0;
+     transform: scaleX(-1);
+}
+ 
+ 
