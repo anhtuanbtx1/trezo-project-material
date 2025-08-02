@@ -1,0 +1,369 @@
+{
+  "success": true,
+  "message": "Room details retrieved successfully",
+  "data": {
+    "room": {
+      "id": "TRZ-32",
+      "roomName": "Serenity Suite",
+      "description": "A luxurious suite with modern amenities and stunning city views. Perfect for business travelers and couples seeking comfort and elegance. The room features contemporary design with premium furnishings and state-of-the-art technology.",
+      "hotel": {
+        "id": "hotel-001",
+        "name": "Elysian Grand",
+        "address": "123 Luxury Street, City Center",
+        "rating": 4.8,
+        "contact": {
+          "phone": "+1-555-0123",
+          "email": "info@elysiangrand.com",
+          "website": "https://elysiangrand.com"
+        },
+        "location": {
+          "latitude": 40.7128,
+          "longitude": -74.0060,
+          "city": "New York",
+          "country": "USA",
+          "timezone": "America/New_York"
+        }
+      },
+      "roomType": "Suite",
+      "bedType": "Double Bed",
+      "floor": "G-02",
+      "roomNumber": "G-202",
+      "facilities": [
+        "High-speed Wi-Fi",
+        "Comfortable bedding and pillows",
+        "Temperature control (AC/heating)",
+        "24/7 room service",
+        "Safe deposit box",
+        "Mini-bar",
+        "Smart TV with streaming services",
+        "Work desk with ergonomic chair",
+        "Blackout curtains",
+        "Coffee/Tea making facilities"
+      ],
+      "rate": {
+        "amount": 157,
+        "currency": "USD",
+        "period": "night",
+        "taxesIncluded": false,
+        "taxRate": 0.12
+      },
+      "status": "Available",
+      "images": [
+        {
+          "id": "img-001",
+          "url": "/images/rooms/room1.jpg",
+          "alt": "Serenity Suite main view",
+          "isPrimary": true,
+          "category": "main"
+        },
+        {
+          "id": "img-002",
+          "url": "/images/rooms/room1-bathroom.jpg",
+          "alt": "Serenity Suite bathroom",
+          "isPrimary": false,
+          "category": "bathroom"
+        },
+        {
+          "id": "img-003",
+          "url": "/images/rooms/room1-view.jpg",
+          "alt": "City view from Serenity Suite",
+          "isPrimary": false,
+          "category": "view"
+        },
+        {
+          "id": "img-004",
+          "url": "/images/rooms/room1-amenities.jpg",
+          "alt": "Room amenities",
+          "isPrimary": false,
+          "category": "amenities"
+        }
+      ],
+      "capacity": {
+        "adults": 2,
+        "children": 1,
+        "maxOccupancy": 3,
+        "extraBedAvailable": true,
+        "extraBedCharge": 25
+      },
+      "roomSize": {
+        "area": 35,
+        "unit": "sqm",
+        "dimensions": "7m x 5m",
+        "ceilingHeight": "3.2m"
+      },
+      "amenities": [
+        {
+          "id": "amenity-001",
+          "name": "Wi-Fi",
+          "icon": "wifi",
+          "category": "connectivity",
+          "description": "High-speed wireless internet throughout the room",
+          "isComplimentary": true
+        },
+        {
+          "id": "amenity-002",
+          "name": "Air Conditioning",
+          "icon": "ac_unit",
+          "category": "comfort",
+          "description": "Individual climate control with heating and cooling",
+          "isComplimentary": true
+        },
+        {
+          "id": "amenity-003",
+          "name": "Smart TV",
+          "icon": "tv",
+          "category": "entertainment",
+          "description": "55-inch 4K Smart TV with Netflix, Prime Video, and local channels",
+          "isComplimentary": true
+        },
+        {
+          "id": "amenity-004",
+          "name": "Mini-bar",
+          "icon": "local_bar",
+          "category": "refreshments",
+          "description": "Fully stocked mini-bar with premium beverages and snacks",
+          "isComplimentary": false
+        },
+        {
+          "id": "amenity-005",
+          "name": "Room Service",
+          "icon": "room_service",
+          "category": "service",
+          "description": "24/7 in-room dining service",
+          "isComplimentary": false
+        },
+        {
+          "id": "amenity-006",
+          "name": "Safe",
+          "icon": "lock",
+          "category": "security",
+          "description": "Electronic safe for valuables",
+          "isComplimentary": true
+        }
+      ],
+      "pricing": {
+        "baseRate": 157,
+        "weekendRate": 180,
+        "seasonalRates": [
+          {
+            "season": "peak",
+            "startDate": "2024-12-20",
+            "endDate": "2025-01-05",
+            "rate": 220,
+            "description": "Holiday season premium"
+          },
+          {
+            "season": "summer",
+            "startDate": "2024-06-01",
+            "endDate": "2024-08-31",
+            "rate": 175,
+            "description": "Summer season rate"
+          }
+        ],
+        "discounts": [
+          {
+            "type": "early_bird",
+            "percentage": 10,
+            "minDaysAdvance": 30,
+            "description": "Book 30 days in advance"
+          },
+          {
+            "type": "extended_stay",
+            "percentage": 15,
+            "minNights": 7,
+            "description": "Stay 7+ nights"
+          }
+        ],
+        "packages": [
+          {
+            "id": "romantic",
+            "name": "Romantic Package",
+            "price": 50,
+            "includes": ["Champagne", "Chocolate", "Rose petals", "Late checkout"]
+          },
+          {
+            "id": "business",
+            "name": "Business Package",
+            "price": 30,
+            "includes": ["Airport transfer", "Meeting room access", "Business center"]
+          }
+        ]
+      },
+      "availability": {
+        "isAvailable": true,
+        "nextAvailableDate": null,
+        "blockedDates": ["2024-08-15", "2024-08-16"],
+        "maintenanceSchedule": [
+          {
+            "date": "2024-08-20",
+            "type": "Deep cleaning",
+            "duration": "4 hours",
+            "description": "Quarterly deep cleaning and carpet maintenance"
+          }
+        ]
+      },
+      "bookingHistory": [
+        {
+          "bookingId": "BK-001",
+          "guestId": "GST-001",
+          "guestName": "John Doe",
+          "checkIn": "2024-07-15",
+          "checkOut": "2024-07-18",
+          "nights": 3,
+          "totalAmount": 471,
+          "status": "completed",
+          "rating": 5,
+          "review": "Excellent service and beautiful room!",
+          "specialRequests": ["Late checkout", "Extra pillows"]
+        },
+        {
+          "bookingId": "BK-018",
+          "guestId": "GST-008",
+          "guestName": "Emily Wilson",
+          "checkIn": "2024-06-20",
+          "checkOut": "2024-06-23",
+          "nights": 3,
+          "totalAmount": 471,
+          "status": "completed",
+          "rating": 4,
+          "review": "Great location and comfortable stay",
+          "specialRequests": ["Quiet room"]
+        }
+      ],
+      "reviews": [
+        {
+          "id": "review-001",
+          "bookingId": "BK-001",
+          "guestId": "GST-001",
+          "guestName": "John Doe",
+          "rating": 5,
+          "title": "Outstanding Experience",
+          "comment": "Excellent service and beautiful room! The staff was incredibly helpful and the amenities exceeded expectations.",
+          "date": "2024-07-20",
+          "verified": true,
+          "helpful": 12,
+          "categories": {
+            "cleanliness": 5,
+            "comfort": 5,
+            "location": 4,
+            "service": 5,
+            "value": 4
+          },
+          "photos": [
+            "/images/reviews/review-001-1.jpg",
+            "/images/reviews/review-001-2.jpg"
+          ]
+        },
+        {
+          "id": "review-002",
+          "bookingId": "BK-018",
+          "guestId": "GST-008",
+          "guestName": "Emily Wilson",
+          "rating": 4,
+          "title": "Great Stay",
+          "comment": "Great location and comfortable stay. Room was clean and well-maintained. Would definitely recommend!",
+          "date": "2024-06-25",
+          "verified": true,
+          "helpful": 8,
+          "categories": {
+            "cleanliness": 5,
+            "comfort": 4,
+            "location": 5,
+            "service": 4,
+            "value": 4
+          },
+          "photos": []
+        }
+      ],
+      "maintenance": [
+        {
+          "id": "maint-001",
+          "type": "cleaning",
+          "scheduledDate": "2024-08-05",
+          "completedDate": "2024-08-05",
+          "status": "completed",
+          "notes": "Regular housekeeping and maintenance check",
+          "assignedTo": "Housekeeping Team A",
+          "duration": "2 hours"
+        },
+        {
+          "id": "maint-002",
+          "type": "maintenance",
+          "scheduledDate": "2024-08-20",
+          "completedDate": null,
+          "status": "scheduled",
+          "notes": "Deep cleaning and carpet replacement",
+          "assignedTo": "Maintenance Team B",
+          "estimatedDuration": "4 hours"
+        }
+      ],
+      "nearbyAttractions": [
+        {
+          "name": "Central Park",
+          "distance": "0.5 km",
+          "type": "Park",
+          "description": "Beautiful urban park perfect for morning walks"
+        },
+        {
+          "name": "Metropolitan Museum",
+          "distance": "1.2 km",
+          "type": "Museum",
+          "description": "World-renowned art museum"
+        },
+        {
+          "name": "Times Square",
+          "distance": "2.1 km",
+          "type": "Entertainment",
+          "description": "Iconic entertainment district"
+        }
+      ],
+      "policies": {
+        "checkIn": "15:00",
+        "checkOut": "11:00",
+        "cancellation": {
+          "freeUntil": 24,
+          "unit": "hours",
+          "penalty": "First night charge"
+        },
+        "smoking": "Non-smoking",
+        "pets": {
+          "allowed": false,
+          "fee": 0,
+          "restrictions": []
+        },
+        "children": {
+          "allowed": true,
+          "freeAge": 12,
+          "extraBedAge": 3
+        }
+      },
+      "metadata": {
+        "createdAt": "2024-01-15T10:30:00Z",
+        "updatedAt": "2024-08-01T14:20:00Z",
+        "createdBy": "admin-001",
+        "lastModifiedBy": "manager-002",
+        "lastCleaned": "2024-08-05T10:00:00Z",
+        "lastMaintenance": "2024-07-01T09:00:00Z",
+        "totalBookings": 45,
+        "averageRating": 4.6,
+        "occupancyRate": 0.78
+      }
+    },
+    "relatedRooms": [
+      {
+        "id": "TRZ-33",
+        "roomName": "Cozy Book Nook",
+        "rate": 146,
+        "status": "Available",
+        "image": "/images/rooms/room2.jpg"
+      },
+      {
+        "id": "TRZ-34",
+        "roomName": "Sunset Vista",
+        "rate": 198,
+        "status": "Available",
+        "image": "/images/rooms/room3.jpg"
+      }
+    ]
+  }
+}

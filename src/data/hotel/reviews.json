@@ -1,0 +1,405 @@
+{
+  "success": true,
+  "message": "Reviews retrieved successfully",
+  "data": {
+    "reviews": [
+      {
+        "id": "REV-001",
+        "bookingId": "BK-001",
+        "roomId": "TRZ-32",
+        "roomName": "Serenity Suite",
+        "guest": {
+          "id": "GST-001",
+          "name": "John Doe",
+          "email": "john.doe@email.com",
+          "membershipType": "Gold",
+          "avatar": "/images/guests/guest1.jpg",
+          "isVerified": true
+        },
+        "hotel": {
+          "id": "hotel-001",
+          "name": "Elysian Grand"
+        },
+        "rating": {
+          "overall": 5,
+          "categories": {
+            "cleanliness": 5,
+            "comfort": 5,
+            "location": 4,
+            "service": 5,
+            "value": 4,
+            "amenities": 5
+          }
+        },
+        "title": "Outstanding Experience",
+        "comment": "Excellent service and beautiful room! The staff was incredibly helpful and the amenities exceeded expectations. The room was spotless and the bed was extremely comfortable. Will definitely stay here again!",
+        "pros": [
+          "Exceptional service",
+          "Clean and comfortable room",
+          "Great amenities",
+          "Helpful staff",
+          "Perfect location"
+        ],
+        "cons": [
+          "Slightly expensive",
+          "Limited parking"
+        ],
+        "stayDetails": {
+          "checkIn": "2024-07-15",
+          "checkOut": "2024-07-18",
+          "nights": 3,
+          "purpose": "Leisure",
+          "groupType": "Couple"
+        },
+        "photos": [
+          {
+            "id": "photo-001",
+            "url": "/images/reviews/review-001-1.jpg",
+            "caption": "Beautiful room view",
+            "uploadedAt": "2024-07-20T10:30:00Z"
+          },
+          {
+            "id": "photo-002",
+            "url": "/images/reviews/review-001-2.jpg",
+            "caption": "Comfortable bed",
+            "uploadedAt": "2024-07-20T10:31:00Z"
+          }
+        ],
+        "helpfulVotes": 12,
+        "totalVotes": 15,
+        "isRecommended": true,
+        "language": "en",
+        "status": "published",
+        "moderationNotes": "",
+        "response": {
+          "id": "resp-001",
+          "author": "Hotel Manager",
+          "authorRole": "Management",
+          "content": "Thank you so much for your wonderful review, John! We're thrilled that you enjoyed your stay and found our service exceptional. We look forward to welcoming you back soon!",
+          "date": "2024-07-21T09:00:00Z"
+        },
+        "metadata": {
+          "createdAt": "2024-07-20T10:30:00Z",
+          "updatedAt": "2024-07-21T09:00:00Z",
+          "source": "direct",
+          "ipAddress": "192.168.1.100",
+          "userAgent": "Mozilla/5.0...",
+          "isEdited": false
+        }
+      },
+      {
+        "id": "REV-002",
+        "bookingId": "BK-018",
+        "roomId": "TRZ-32",
+        "roomName": "Serenity Suite",
+        "guest": {
+          "id": "GST-008",
+          "name": "Emily Wilson",
+          "email": "emily.wilson@email.com",
+          "membershipType": "Silver",
+          "avatar": "/images/guests/guest8.jpg",
+          "isVerified": true
+        },
+        "hotel": {
+          "id": "hotel-001",
+          "name": "Elysian Grand"
+        },
+        "rating": {
+          "overall": 4,
+          "categories": {
+            "cleanliness": 5,
+            "comfort": 4,
+            "location": 5,
+            "service": 4,
+            "value": 4,
+            "amenities": 4
+          }
+        },
+        "title": "Great Stay in the City",
+        "comment": "Great location and comfortable stay. Room was clean and well-maintained. The staff was friendly and accommodating. Perfect for a business trip. Would definitely recommend!",
+        "pros": [
+          "Excellent location",
+          "Clean room",
+          "Friendly staff",
+          "Good for business",
+          "Comfortable bed"
+        ],
+        "cons": [
+          "Wi-Fi could be faster",
+          "Room service was slow"
+        ],
+        "stayDetails": {
+          "checkIn": "2024-06-20",
+          "checkOut": "2024-06-23",
+          "nights": 3,
+          "purpose": "Business",
+          "groupType": "Solo"
+        },
+        "photos": [],
+        "helpfulVotes": 8,
+        "totalVotes": 10,
+        "isRecommended": true,
+        "language": "en",
+        "status": "published",
+        "moderationNotes": "",
+        "response": {
+          "id": "resp-002",
+          "author": "Front Desk Manager",
+          "authorRole": "Management",
+          "content": "Thank you for your feedback, Emily! We're glad you enjoyed your stay. We'll work on improving our Wi-Fi speed and room service timing. We appreciate your business!",
+          "date": "2024-06-26T14:30:00Z"
+        },
+        "metadata": {
+          "createdAt": "2024-06-25T16:45:00Z",
+          "updatedAt": "2024-06-26T14:30:00Z",
+          "source": "direct",
+          "ipAddress": "192.168.1.101",
+          "userAgent": "Mozilla/5.0...",
+          "isEdited": false
+        }
+      },
+      {
+        "id": "REV-003",
+        "bookingId": "BK-025",
+        "roomId": "TRZ-34",
+        "roomName": "Sunset Vista",
+        "guest": {
+          "id": "GST-002",
+          "name": "Sarah Johnson",
+          "email": "sarah.johnson@email.com",
+          "membershipType": "Silver",
+          "avatar": "/images/guests/guest2.jpg",
+          "isVerified": true
+        },
+        "hotel": {
+          "id": "hotel-001",
+          "name": "Elysian Grand"
+        },
+        "rating": {
+          "overall": 5,
+          "categories": {
+            "cleanliness": 5,
+            "comfort": 5,
+            "location": 5,
+            "service": 5,
+            "value": 5,
+            "amenities": 4
+          }
+        },
+        "title": "Perfect Weekend Getaway",
+        "comment": "Amazing room with stunning sunset views! The balcony was perfect for morning coffee and evening relaxation. Staff went above and beyond to make our stay memorable. Highly recommended for couples!",
+        "pros": [
+          "Stunning sunset views",
+          "Private balcony",
+          "Exceptional service",
+          "Romantic atmosphere",
+          "Great amenities"
+        ],
+        "cons": [
+          "Mini-bar prices are high"
+        ],
+        "stayDetails": {
+          "checkIn": "2024-08-01",
+          "checkOut": "2024-08-05",
+          "nights": 4,
+          "purpose": "Leisure",
+          "groupType": "Couple"
+        },
+        "photos": [
+          {
+            "id": "photo-003",
+            "url": "/images/reviews/review-003-1.jpg",
+            "caption": "Beautiful sunset view from balcony",
+            "uploadedAt": "2024-08-06T18:00:00Z"
+          }
+        ],
+        "helpfulVotes": 15,
+        "totalVotes": 16,
+        "isRecommended": true,
+        "language": "en",
+        "status": "published",
+        "moderationNotes": "",
+        "response": null,
+        "metadata": {
+          "createdAt": "2024-08-06T18:00:00Z",
+          "updatedAt": "2024-08-06T18:00:00Z",
+          "source": "direct",
+          "ipAddress": "192.168.1.102",
+          "userAgent": "Mozilla/5.0...",
+          "isEdited": false
+        }
+      },
+      {
+        "id": "REV-004",
+        "bookingId": "BK-012",
+        "roomId": "TRZ-50",
+        "roomName": "Crimson Peak",
+        "guest": {
+          "id": "GST-003",
+          "name": "David Chen",
+          "email": "david.chen@email.com",
+          "membershipType": "Platinum",
+          "avatar": "/images/guests/guest3.jpg",
+          "isVerified": true
+        },
+        "hotel": {
+          "id": "hotel-004",
+          "name": "Sky High Towers"
+        },
+        "rating": {
+          "overall": 5,
+          "categories": {
+            "cleanliness": 5,
+            "comfort": 5,
+            "location": 5,
+            "service": 5,
+            "value": 4,
+            "amenities": 5
+          }
+        },
+        "title": "Luxury at Its Finest",
+        "comment": "Absolutely incredible penthouse suite! The panoramic city views are breathtaking, and the butler service was impeccable. Perfect for our anniversary celebration. Worth every penny!",
+        "pros": [
+          "Panoramic city views",
+          "Butler service",
+          "Luxury amenities",
+          "Spacious suite",
+          "Perfect for special occasions"
+        ],
+        "cons": [],
+        "stayDetails": {
+          "checkIn": "2024-02-14",
+          "checkOut": "2024-02-17",
+          "nights": 3,
+          "purpose": "Leisure",
+          "groupType": "Couple"
+        },
+        "photos": [
+          {
+            "id": "photo-004",
+            "url": "/images/reviews/review-004-1.jpg",
+            "caption": "Panoramic city view",
+            "uploadedAt": "2024-02-18T20:00:00Z"
+          },
+          {
+            "id": "photo-005",
+            "url": "/images/reviews/review-004-2.jpg",
+            "caption": "Luxury suite interior",
+            "uploadedAt": "2024-02-18T20:01:00Z"
+          }
+        ],
+        "helpfulVotes": 25,
+        "totalVotes": 27,
+        "isRecommended": true,
+        "language": "en",
+        "status": "published",
+        "moderationNotes": "",
+        "response": {
+          "id": "resp-004",
+          "author": "General Manager",
+          "authorRole": "Management",
+          "content": "Dear David, thank you for choosing Sky High Towers for your anniversary! We're delighted that you enjoyed our penthouse suite and butler service. We look forward to hosting you again for future celebrations!",
+          "date": "2024-02-19T10:00:00Z"
+        },
+        "metadata": {
+          "createdAt": "2024-02-18T20:00:00Z",
+          "updatedAt": "2024-02-19T10:00:00Z",
+          "source": "direct",
+          "ipAddress": "192.168.1.103",
+          "userAgent": "Mozilla/5.0...",
+          "isEdited": false
+        }
+      }
+    ],
+    "pagination": {
+      "currentPage": 1,
+      "totalPages": 25,
+      "totalItems": 248,
+      "itemsPerPage": 10,
+      "hasNextPage": true,
+      "hasPreviousPage": false
+    },
+    "filters": {
+      "applied": {
+        "rating": null,
+        "hotelId": null,
+        "roomId": null,
+        "guestType": null,
+        "dateRange": {
+          "start": null,
+          "end": null
+        },
+        "verified": null,
+        "hasPhotos": null,
+        "language": null
+      },
+      "available": {
+        "ratings": [1, 2, 3, 4, 5],
+        "hotels": [
+          {
+            "id": "hotel-001",
+            "name": "Elysian Grand"
+          },
+          {
+            "id": "hotel-002",
+            "name": "Celestial Haven"
+          },
+          {
+            "id": "hotel-003",
+            "name": "Oceanic Pearl"
+          },
+          {
+            "id": "hotel-004",
+            "name": "Sky High Towers"
+          },
+          {
+            "id": "hotel-005",
+            "name": "Mountain Escape"
+          }
+        ],
+        "guestTypes": ["Solo", "Couple", "Family", "Business", "Group"],
+        "languages": ["en", "es", "fr", "de", "zh", "ja"],
+        "purposes": ["Leisure", "Business", "Family", "Romance"]
+      }
+    },
+    "statistics": {
+      "totalReviews": 248,
+      "averageRating": 4.3,
+      "ratingDistribution": {
+        "5": 120,
+        "4": 85,
+        "3": 30,
+        "2": 10,
+        "1": 3
+      },
+      "categoryAverages": {
+        "cleanliness": 4.5,
+        "comfort": 4.4,
+        "location": 4.2,
+        "service": 4.3,
+        "value": 4.0,
+        "amenities": 4.1
+      },
+      "monthlyTrends": [
+        {
+          "month": "2024-01",
+          "count": 18,
+          "averageRating": 4.2
+        },
+        {
+          "month": "2024-02",
+          "count": 22,
+          "averageRating": 4.4
+        },
+        {
+          "month": "2024-03",
+          "count": 25,
+          "averageRating": 4.3
+        }
+      ],
+      "responseRate": 0.85,
+      "averageResponseTime": "2.3 days",
+      "recommendationRate": 0.92
+    }
+  }
+}

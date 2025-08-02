@@ -1,0 +1,210 @@
+{
+  "success": true,
+  "message": "Rooms retrieved successfully",
+  "data": {
+    "rooms": [
+      {
+        "id": "TRZ-32",
+        "roomName": "Serenity Suite",
+        "hotel": {
+          "id": "hotel-001",
+          "name": "Elysian Grand",
+          "address": "123 Luxury Street, City Center"
+        },
+        "bedType": "Double Bed",
+        "floor": "G-02",
+        "facilities": [
+          "High-speed Wi-Fi",
+          "Comfortable bedding and pillows", 
+          "Temperature control (AC/heating)"
+        ],
+        "rate": {
+          "amount": 157,
+          "currency": "USD",
+          "period": "night"
+        },
+        "status": "Available",
+        "images": [
+          {
+            "id": "img-001",
+            "url": "/images/rooms/room1.jpg",
+            "alt": "Serenity Suite main view",
+            "isPrimary": true
+          }
+        ],
+        "capacity": {
+          "adults": 2,
+          "children": 1,
+          "maxOccupancy": 3
+        },
+        "roomSize": {
+          "area": 35,
+          "unit": "sqm"
+        },
+        "amenities": [
+          {
+            "id": "amenity-001",
+            "name": "Wi-Fi",
+            "icon": "wifi",
+            "category": "connectivity"
+          },
+          {
+            "id": "amenity-002", 
+            "name": "Air Conditioning",
+            "icon": "ac_unit",
+            "category": "comfort"
+          }
+        ],
+        "pricing": {
+          "baseRate": 157,
+          "weekendRate": 180,
+          "seasonalRates": [
+            {
+              "season": "peak",
+              "startDate": "2024-12-20",
+              "endDate": "2024-01-05",
+              "rate": 220
+            }
+          ],
+          "discounts": [
+            {
+              "type": "early_bird",
+              "percentage": 10,
+              "minDaysAdvance": 30
+            }
+          ]
+        },
+        "availability": {
+          "isAvailable": true,
+          "nextAvailableDate": null,
+          "blockedDates": ["2024-08-15", "2024-08-16"]
+        },
+        "metadata": {
+          "createdAt": "2024-01-15T10:30:00Z",
+          "updatedAt": "2024-08-01T14:20:00Z",
+          "createdBy": "admin-001",
+          "lastModifiedBy": "manager-002"
+        }
+      },
+      {
+        "id": "TRZ-33",
+        "roomName": "Cozy Book Nook",
+        "hotel": {
+          "id": "hotel-002",
+          "name": "Celestial Haven",
+          "address": "456 Peaceful Avenue, Garden District"
+        },
+        "bedType": "Single Bed",
+        "floor": "G-01",
+        "facilities": [
+          "High-speed Wi-Fi",
+          "Comfortable bedding and pillows",
+          "Temperature control (AC/heating)",
+          "Reading corner",
+          "Mini library"
+        ],
+        "rate": {
+          "amount": 146,
+          "currency": "USD",
+          "period": "night"
+        },
+        "status": "Not Available",
+        "images": [
+          {
+            "id": "img-002",
+            "url": "/images/rooms/room2.jpg",
+            "alt": "Cozy Book Nook main view",
+            "isPrimary": true
+          }
+        ],
+        "capacity": {
+          "adults": 1,
+          "children": 0,
+          "maxOccupancy": 1
+        },
+        "roomSize": {
+          "area": 25,
+          "unit": "sqm"
+        },
+        "amenities": [
+          {
+            "id": "amenity-001",
+            "name": "Wi-Fi",
+            "icon": "wifi",
+            "category": "connectivity"
+          },
+          {
+            "id": "amenity-003",
+            "name": "Reading Light",
+            "icon": "lightbulb",
+            "category": "comfort"
+          }
+        ],
+        "pricing": {
+          "baseRate": 146,
+          "weekendRate": 160,
+          "seasonalRates": [],
+          "discounts": []
+        },
+        "availability": {
+          "isAvailable": false,
+          "nextAvailableDate": "2024-08-10",
+          "blockedDates": ["2024-08-05", "2024-08-06", "2024-08-07"]
+        },
+        "metadata": {
+          "createdAt": "2024-01-20T09:15:00Z",
+          "updatedAt": "2024-08-01T16:45:00Z",
+          "createdBy": "admin-001",
+          "lastModifiedBy": "staff-003"
+        }
+      }
+    ],
+    "pagination": {
+      "currentPage": 1,
+      "totalPages": 5,
+      "totalItems": 50,
+      "itemsPerPage": 10,
+      "hasNextPage": true,
+      "hasPreviousPage": false
+    },
+    "filters": {
+      "applied": {
+        "status": [],
+        "bedType": [],
+        "priceRange": {
+          "min": 0,
+          "max": 1000
+        },
+        "hotel": [],
+        "floor": []
+      },
+      "available": {
+        "statuses": ["Available", "Not Available", "Maintenance", "Cleaning"],
+        "bedTypes": ["Single Bed", "Double Bed", "Queen Bed", "King Bed", "Twin Bed"],
+        "hotels": [
+          {
+            "id": "hotel-001",
+            "name": "Elysian Grand"
+          },
+          {
+            "id": "hotel-002", 
+            "name": "Celestial Haven"
+          },
+          {
+            "id": "hotel-003",
+            "name": "Oceanic Pearl"
+          },
+          {
+            "id": "hotel-004",
+            "name": "Sky High Towers"
+          },
+          {
+            "id": "hotel-005",
+            "name": "Mountain Escape"
+          }
+        ],
+        "floors": ["G-01", "G-02", "1-05", "1-07", "1-12", "2-01", "2-08", "2-09", "3-04", "3-05", "3-10", "4-06", "5-02", "10-03", "15-01", "Penthouse", "Top Floor", "Cabin Area", "Studio Floor", "Wing B"]
+      }
+    }
+  }
+}

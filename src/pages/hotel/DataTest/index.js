@@ -1,14 +1,13 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import RoomsListTable from "../../../components/Hotel/RoomsListTable";
+import React from "react"; 
+import { Link } from "react-router-dom";   
+import RoomsDataDemo from "../../../components/Hotel/RoomsDataDemo";
 
-
-const RoomsList = () => {
+const DataTest = () => {
   return (
     <>
       {/* Breadcrumb */}
       <div className="breadcrumb-card">
-        <h5>Rooms List</h5>
+        <h5>Hotel Data Test</h5>
 
         <ul className="breadcrumb">
           <li>
@@ -16,15 +15,15 @@ const RoomsList = () => {
               <i className="material-symbols-outlined">home</i>
               Dashboard
             </Link>
-          </li>
+          </li> 
           <li>Hotel</li>
-          <li>Rooms List</li>
+          <li>Data Test</li>
         </ul>
       </div>
 
-      <RoomsListTable />
+      <RoomsDataDemo />
     </>
   );
 };
 
-export default RoomsList;
+export default DataTest;

@@ -291,6 +291,9 @@ import Connections from "./pages/settings/Connections";
 import PrivacyPolicy from "./pages/settings/PrivacyPolicy";
 import TermsConditions from "./pages/settings/TermsConditions";
 
+// Image System Demo
+import ImageSystemDemo from "./pages/ImageSystemDemo";
+
 const App = () => {
   const [active, setActive] = useState(false);
   const [pathname, setPathname] = useState("");
@@ -791,6 +794,9 @@ const App = () => {
                 path="/settings/terms-conditions/"
                 element={<TermsConditions />}
               />
+
+              {/* Image System Demo */}
+              <Route path="/demo/image-system" element={<ImageSystemDemo />} />
             </Routes>
 
             {!isAuthPage && <Footer />}

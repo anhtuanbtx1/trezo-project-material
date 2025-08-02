@@ -1,0 +1,378 @@
+{
+  "success": true,
+  "message": "Guests retrieved successfully",
+  "data": {
+    "guests": [
+      {
+        "id": "GST-001",
+        "guestCode": "TRZ-G-001",
+        "personalInfo": {
+          "firstName": "John",
+          "lastName": "Doe",
+          "fullName": "John Doe",
+          "email": "john.doe@email.com",
+          "phone": "+1-555-0123",
+          "dateOfBirth": "1985-03-15",
+          "nationality": "American",
+          "gender": "Male",
+          "idType": "Passport",
+          "idNumber": "P123456789",
+          "address": {
+            "street": "123 Main Street",
+            "city": "New York",
+            "state": "NY",
+            "zipCode": "10001",
+            "country": "USA"
+          }
+        },
+        "avatar": "/images/guests/guest1.jpg",
+        "membershipInfo": {
+          "membershipType": "Gold",
+          "memberSince": "2022-01-15",
+          "loyaltyPoints": 2500,
+          "membershipBenefits": ["Free Wi-Fi", "Late Checkout", "Room Upgrade"]
+        },
+        "contactPreferences": {
+          "preferredLanguage": "English",
+          "communicationMethod": "Email",
+          "marketingOptIn": true,
+          "smsOptIn": false
+        },
+        "emergencyContact": {
+          "name": "Jane Doe",
+          "relationship": "Spouse",
+          "phone": "+1-555-0124",
+          "email": "jane.doe@email.com"
+        },
+        "bookingHistory": [
+          {
+            "bookingId": "BK-001",
+            "roomId": "TRZ-32",
+            "roomName": "Serenity Suite",
+            "checkIn": "2024-07-15",
+            "checkOut": "2024-07-18",
+            "nights": 3,
+            "totalAmount": 471,
+            "status": "Completed",
+            "rating": 5,
+            "review": "Excellent service and beautiful room!"
+          },
+          {
+            "bookingId": "BK-015",
+            "roomId": "TRZ-35",
+            "roomName": "Ocean Breeze",
+            "checkIn": "2024-05-10",
+            "checkOut": "2024-05-14",
+            "nights": 4,
+            "totalAmount": 1000,
+            "status": "Completed",
+            "rating": 4,
+            "review": "Great ocean view, will come back!"
+          }
+        ],
+        "preferences": {
+          "roomType": "Suite",
+          "bedType": "King Bed",
+          "floor": "High Floor",
+          "smokingPreference": "Non-Smoking",
+          "specialRequests": ["Extra pillows", "Late checkout"],
+          "dietaryRestrictions": ["Vegetarian"],
+          "accessibility": []
+        },
+        "currentStay": {
+          "isCurrentlyStaying": false,
+          "bookingId": null,
+          "roomId": null,
+          "checkIn": null,
+          "checkOut": null
+        },
+        "financialInfo": {
+          "totalSpent": 1471,
+          "averageSpendPerNight": 157,
+          "paymentMethods": [
+            {
+              "type": "Credit Card",
+              "lastFour": "1234",
+              "isDefault": true
+            }
+          ],
+          "outstandingBalance": 0
+        },
+        "notes": [
+          {
+            "id": "note-001",
+            "date": "2024-07-18",
+            "author": "Front Desk",
+            "content": "Guest requested early check-in for next visit",
+            "type": "Request"
+          }
+        ],
+        "status": "Active",
+        "metadata": {
+          "createdAt": "2022-01-15T10:30:00Z",
+          "updatedAt": "2024-07-18T14:20:00Z",
+          "lastVisit": "2024-07-18",
+          "totalVisits": 2,
+          "createdBy": "front-desk-001",
+          "lastModifiedBy": "manager-002"
+        }
+      },
+      {
+        "id": "GST-002",
+        "guestCode": "TRZ-G-002",
+        "personalInfo": {
+          "firstName": "Sarah",
+          "lastName": "Johnson",
+          "fullName": "Sarah Johnson",
+          "email": "sarah.johnson@email.com",
+          "phone": "+1-555-0125",
+          "dateOfBirth": "1990-08-22",
+          "nationality": "Canadian",
+          "gender": "Female",
+          "idType": "Driver License",
+          "idNumber": "DL987654321",
+          "address": {
+            "street": "456 Oak Avenue",
+            "city": "Toronto",
+            "state": "ON",
+            "zipCode": "M5V 3A8",
+            "country": "Canada"
+          }
+        },
+        "avatar": "/images/guests/guest2.jpg",
+        "membershipInfo": {
+          "membershipType": "Silver",
+          "memberSince": "2023-03-20",
+          "loyaltyPoints": 1200,
+          "membershipBenefits": ["Free Wi-Fi", "Welcome Drink"]
+        },
+        "contactPreferences": {
+          "preferredLanguage": "English",
+          "communicationMethod": "Phone",
+          "marketingOptIn": false,
+          "smsOptIn": true
+        },
+        "emergencyContact": {
+          "name": "Michael Johnson",
+          "relationship": "Brother",
+          "phone": "+1-555-0126",
+          "email": "michael.johnson@email.com"
+        },
+        "bookingHistory": [
+          {
+            "bookingId": "BK-008",
+            "roomId": "TRZ-33",
+            "roomName": "Cozy Book Nook",
+            "checkIn": "2024-06-01",
+            "checkOut": "2024-06-03",
+            "nights": 2,
+            "totalAmount": 292,
+            "status": "Completed",
+            "rating": 4,
+            "review": "Perfect for a quiet getaway"
+          }
+        ],
+        "preferences": {
+          "roomType": "Standard",
+          "bedType": "Queen Bed",
+          "floor": "Any",
+          "smokingPreference": "Non-Smoking",
+          "specialRequests": ["Quiet room"],
+          "dietaryRestrictions": [],
+          "accessibility": []
+        },
+        "currentStay": {
+          "isCurrentlyStaying": true,
+          "bookingId": "BK-025",
+          "roomId": "TRZ-34",
+          "checkIn": "2024-08-01",
+          "checkOut": "2024-08-05"
+        },
+        "financialInfo": {
+          "totalSpent": 292,
+          "averageSpendPerNight": 146,
+          "paymentMethods": [
+            {
+              "type": "Debit Card",
+              "lastFour": "5678",
+              "isDefault": true
+            }
+          ],
+          "outstandingBalance": 0
+        },
+        "notes": [],
+        "status": "Active",
+        "metadata": {
+          "createdAt": "2023-03-20T09:15:00Z",
+          "updatedAt": "2024-08-01T16:45:00Z",
+          "lastVisit": "2024-08-01",
+          "totalVisits": 2,
+          "createdBy": "front-desk-002",
+          "lastModifiedBy": "staff-003"
+        }
+      },
+      {
+        "id": "GST-003",
+        "guestCode": "TRZ-G-003",
+        "personalInfo": {
+          "firstName": "David",
+          "lastName": "Chen",
+          "fullName": "David Chen",
+          "email": "david.chen@email.com",
+          "phone": "+1-555-0127",
+          "dateOfBirth": "1978-12-05",
+          "nationality": "Chinese",
+          "gender": "Male",
+          "idType": "Passport",
+          "idNumber": "C987654321",
+          "address": {
+            "street": "789 Pine Road",
+            "city": "San Francisco",
+            "state": "CA",
+            "zipCode": "94102",
+            "country": "USA"
+          }
+        },
+        "avatar": "/images/guests/guest3.jpg",
+        "membershipInfo": {
+          "membershipType": "Platinum",
+          "memberSince": "2021-06-10",
+          "loyaltyPoints": 5800,
+          "membershipBenefits": ["Free Wi-Fi", "Late Checkout", "Room Upgrade", "Complimentary Breakfast", "Airport Transfer"]
+        },
+        "contactPreferences": {
+          "preferredLanguage": "English",
+          "communicationMethod": "Email",
+          "marketingOptIn": true,
+          "smsOptIn": true
+        },
+        "emergencyContact": {
+          "name": "Lisa Chen",
+          "relationship": "Wife",
+          "phone": "+1-555-0128",
+          "email": "lisa.chen@email.com"
+        },
+        "bookingHistory": [
+          {
+            "bookingId": "BK-003",
+            "roomId": "TRZ-37",
+            "roomName": "Skyline Penthouse",
+            "checkIn": "2024-04-20",
+            "checkOut": "2024-04-25",
+            "nights": 5,
+            "totalAmount": 2100,
+            "status": "Completed",
+            "rating": 5,
+            "review": "Outstanding penthouse with amazing city views!"
+          },
+          {
+            "bookingId": "BK-012",
+            "roomId": "TRZ-50",
+            "roomName": "Crimson Peak",
+            "checkIn": "2024-02-14",
+            "checkOut": "2024-02-17",
+            "nights": 3,
+            "totalAmount": 1500,
+            "status": "Completed",
+            "rating": 5,
+            "review": "Perfect for anniversary celebration"
+          }
+        ],
+        "preferences": {
+          "roomType": "Penthouse",
+          "bedType": "King Bed",
+          "floor": "Top Floor",
+          "smokingPreference": "Non-Smoking",
+          "specialRequests": ["City view", "Champagne on arrival"],
+          "dietaryRestrictions": [],
+          "accessibility": []
+        },
+        "currentStay": {
+          "isCurrentlyStaying": false,
+          "bookingId": null,
+          "roomId": null,
+          "checkIn": null,
+          "checkOut": null
+        },
+        "financialInfo": {
+          "totalSpent": 3600,
+          "averageSpendPerNight": 450,
+          "paymentMethods": [
+            {
+              "type": "Credit Card",
+              "lastFour": "9999",
+              "isDefault": true
+            },
+            {
+              "type": "Corporate Card",
+              "lastFour": "8888",
+              "isDefault": false
+            }
+          ],
+          "outstandingBalance": 0
+        },
+        "notes": [
+          {
+            "id": "note-002",
+            "date": "2024-04-25",
+            "author": "Concierge",
+            "content": "VIP guest - always provide premium service",
+            "type": "VIP"
+          }
+        ],
+        "status": "VIP",
+        "metadata": {
+          "createdAt": "2021-06-10T11:20:00Z",
+          "updatedAt": "2024-04-25T18:30:00Z",
+          "lastVisit": "2024-04-25",
+          "totalVisits": 8,
+          "createdBy": "manager-001",
+          "lastModifiedBy": "concierge-001"
+        }
+      }
+    ],
+    "pagination": {
+      "currentPage": 1,
+      "totalPages": 15,
+      "totalItems": 150,
+      "itemsPerPage": 10,
+      "hasNextPage": true,
+      "hasPreviousPage": false
+    },
+    "filters": {
+      "applied": {
+        "search": "",
+        "status": [],
+        "membershipType": [],
+        "nationality": [],
+        "currentlyStaying": null,
+        "dateRange": {
+          "start": null,
+          "end": null
+        }
+      },
+      "available": {
+        "statuses": ["Active", "VIP", "Inactive", "Blacklisted"],
+        "membershipTypes": ["Bronze", "Silver", "Gold", "Platinum"],
+        "nationalities": ["American", "Canadian", "Chinese", "British", "German", "French", "Japanese", "Australian"],
+        "genders": ["Male", "Female", "Other"],
+        "idTypes": ["Passport", "Driver License", "National ID"]
+      }
+    },
+    "statistics": {
+      "totalGuests": 150,
+      "currentlyStaying": 25,
+      "vipGuests": 12,
+      "newGuestsThisMonth": 8,
+      "averageStayDuration": 3.2,
+      "totalRevenue": 245000,
+      "averageSpendPerGuest": 1633,
+      "membershipDistribution": {
+        "Bronze": 45,
+        "Silver": 60,
+        "Gold": 30,
+        "Platinum": 15
+      }
+    }
+  }
+}
