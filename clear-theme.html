@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear Theme Storage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Theme Storage Manager</h1>
+        <p>Sử dụng các nút bên dưới để quản lý theme storage:</p>
+        
+        <button onclick="checkTheme()">Kiểm tra Theme hiện tại</button>
+        <button onclick="clearTheme()">Xóa Theme Storage</button>
+        <button onclick="setDarkTheme()">Set Dark Theme</button>
+        <button onclick="setLightTheme()">Set Light Theme</button>
+        <button onclick="openReactApp()">Mở React App</button>
+        
+        <div id="result" class="result"></div>
+    </div>
+
+    <script>
+        function checkTheme() {
+            const theme = localStorage.getItem('theme');
+            const beautySalonTheme = localStorage.getItem('beautySalonSidebarTheme');
+            const result = document.getElementById('result');
+            
+            result.innerHTML = `
+                <h3>Theme Storage Status:</h3>
+                <p><strong>theme:</strong> ${theme || 'null (không có)'}</p>
+                <p><strong>beautySalonSidebarTheme:</strong> ${beautySalonTheme || 'null (không có)'}</p>
+                <p><strong>Tổng số localStorage items:</strong> ${localStorage.length}</p>
+            `;
+        }
+        
+        function clearTheme() {
+            localStorage.removeItem('theme');
+            localStorage.removeItem('beautySalonSidebarTheme');
+            const result = document.getElementById('result');
+            result.innerHTML = '<p style="color: green;"><strong>✓ Đã xóa tất cả theme storage!</strong></p>';
+            setTimeout(checkTheme, 500);
+        }
+        
+        function setDarkTheme() {
+            localStorage.setItem('theme', 'dark');
+            const result = document.getElementById('result');
+            result.innerHTML = '<p style="color: blue;"><strong>✓ Đã set theme = dark</strong></p>';
+            setTimeout(checkTheme, 500);
+        }
+        
+        function setLightTheme() {
+            localStorage.setItem('theme', 'light');
+            const result = document.getElementById('result');
+            result.innerHTML = '<p style="color: orange;"><strong>✓ Đã set theme = light</strong></p>';
+            setTimeout(checkTheme, 500);
+        }
+        
+        function openReactApp() {
+            window.open('http://localhost:3000', '_blank');
+        }
+        
+        // Auto check theme on load
+        window.onload = checkTheme;
+    </script>
+</body>
+</html>

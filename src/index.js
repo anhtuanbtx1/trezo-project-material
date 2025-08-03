@@ -27,19 +27,46 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import CssBaseline from "@mui/material/CssBaseline";
-import { ThemeProvider } from "@mui/material/styles";
-import theme from "./theme";
+import { ThemeProvider } from "./contexts/ThemeContext";
+
+// Initialize dark theme immediately before React renders
+const initializeTheme = () => {
+  const storedTheme = localStorage.getItem("theme");
+  const htmlElement = document.querySelector("html");
+  const bodyElement = document.querySelector("body");
+
+  if (htmlElement && bodyElement) {
+    if (storedTheme) {
+      // Apply stored theme preference
+      if (storedTheme === "dark") {
+        htmlElement.classList.add("dark-theme");
+        bodyElement.style.backgroundColor = '#0a0e19';
+        bodyElement.style.color = '#8695AA';
+      } else {
+        htmlElement.classList.remove("dark-theme");
+        bodyElement.style.backgroundColor = '#F6F7F9';
+        bodyElement.style.color = '#64748B';
+      }
+    } else {
+      // Default to dark theme for new users
+      htmlElement.classList.add("dark-theme");
+      bodyElement.style.backgroundColor = '#0a0e19';
+      bodyElement.style.color = '#8695AA';
+      localStorage.setItem("theme", "dark");
+    }
+  }
+};
+
+// Apply theme before React renders
+initializeTheme();
 
 const rootElement = document.getElementById("root");
 const root = ReactDOM.createRoot(rootElement);
 
-// const root = ReactDOM.createRoot(document.getElementById('root'));
-
 root.render(
-  <ThemeProvider theme={theme}>
+  <ThemeProvider>
     {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
     <CssBaseline />
-
     <App />
   </ThemeProvider>
 );

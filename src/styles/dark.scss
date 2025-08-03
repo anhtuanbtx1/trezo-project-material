@@ -1,10 +1,13 @@
-// Globals variables
+// Dark theme variables
 :root {
-  --darkBodyBg: #0a0e19; 
-  --darkCardBg: #0c1427; 
-  --darkBorder: #172036; 
-  --darkBodyColor: #8695AA; 
-  --darkSecondaryColor: #15203c; 
+  --darkBodyBg: #0a0e19;
+  --darkCardBg: #0c1427;
+  --darkBorder: #172036;
+  --darkBodyColor: #8695AA;
+  --darkSecondaryColor: #15203c;
+  --darkTextPrimary: #ffffff;
+  --darkTextSecondary: #8695AA;
+  --darkSurfaceVariant: #1a2332;
 }
 
 .th-toggle-mode {
@@ -638,6 +641,116 @@
   .custom-pagination {
     .MuiTableCell-root {
       border-color: var(--darkBorder) !important;
+    }
+  }
+
+  // Additional comprehensive dark theme styles
+  .MuiMenu-paper {
+    background-color: var(--darkCardBg) !important;
+    border: 1px solid var(--darkBorder);
+  }
+
+  .MuiMenuItem-root {
+    color: var(--darkBodyColor) !important;
+
+    &:hover {
+      background-color: var(--darkSecondaryColor) !important;
+    }
+  }
+
+  .MuiTooltip-tooltip {
+    background-color: var(--darkCardBg) !important;
+    color: var(--darkTextPrimary) !important;
+    border: 1px solid var(--darkBorder);
+  }
+
+  .MuiSnackbar-root {
+    .MuiPaper-root {
+      background-color: var(--darkCardBg) !important;
+      color: var(--darkTextPrimary) !important;
+    }
+  }
+
+  .MuiDialog-paper {
+    background-color: var(--darkCardBg) !important;
+    border: 1px solid var(--darkBorder);
+  }
+
+  .MuiAccordion-root {
+    background-color: var(--darkCardBg) !important;
+    border: 1px solid var(--darkBorder) !important;
+
+    &:before {
+      background-color: var(--darkBorder);
+    }
+  }
+
+  .MuiAccordionSummary-root {
+    background-color: var(--darkCardBg) !important;
+    border-bottom: 1px solid var(--darkBorder);
+  }
+
+  .MuiAccordionDetails-root {
+    background-color: var(--darkCardBg) !important;
+  }
+
+  // Scrollbar styling for dark theme
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--darkBodyBg);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--darkBorder);
+    border-radius: 4px;
+
+    &:hover {
+      background: var(--darkSecondaryColor);
+    }
+  }
+
+  // Code blocks and pre elements
+  pre, code {
+    background-color: var(--darkSecondaryColor) !important;
+    color: var(--darkTextPrimary) !important;
+    border: 1px solid var(--darkBorder);
+  }
+
+  // Selection styling
+  ::selection {
+    background-color: rgba(96, 93, 255, 0.3);
+    color: var(--darkTextPrimary);
+  }
+
+  // Focus styles
+  .MuiOutlinedInput-root {
+    &.Mui-focused {
+      .MuiOutlinedInput-notchedOutline {
+        border-color: #605DFF !important;
+      }
+    }
+  }
+
+  // Breadcrumb dark theme
+  .breadcrumb-card {
+    h5 {
+      color: var(--darkTextPrimary) !important;
+    }
+
+    .breadcrumb {
+      li {
+        a {
+          color: var(--darkBodyColor) !important;
+
+          &:hover {
+            color: #605DFF !important;
+          }
+        }
+      }
     }
   }
 }

@@ -31,10 +31,17 @@
 }
 
 .dark-theme {
-  background-color: var(--darkBodyBg);
+  background-color: var(--darkBodyBg) !important;
 }
 .dark-theme body {
-  background-color: var(--darkBodyBg);
+  background-color: var(--darkBodyBg) !important;
+  color: var(--darkBodyColor) !important;
+}
+html.dark-theme {
+  background-color: var(--darkBodyBg) !important;
+}
+html.dark-theme body {
+  background-color: var(--darkBodyBg) !important;
   color: var(--darkBodyColor) !important;
 }
 .dark-theme h1, .dark-theme h2, .dark-theme h3, .dark-theme h4, .dark-theme h5, .dark-theme h6 {

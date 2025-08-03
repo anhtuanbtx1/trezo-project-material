@@ -294,6 +294,9 @@ import TermsConditions from "./pages/settings/TermsConditions";
 // Image System Demo
 import ImageSystemDemo from "./pages/ImageSystemDemo";
 
+// Theme Demo
+import ThemeDemo from "./components/ThemeDemo/ThemeDemo";
+
 const App = () => {
   const [active, setActive] = useState(false);
   const [pathname, setPathname] = useState("");
@@ -797,6 +800,9 @@ const App = () => {
 
               {/* Image System Demo */}
               <Route path="/demo/image-system" element={<ImageSystemDemo />} />
+
+              {/* Theme Demo */}
+              <Route path="/demo/theme" element={<ThemeDemo />} />
             </Routes>
 
             {!isAuthPage && <Footer />}

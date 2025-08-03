@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug Theme</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .test-section {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .success { background: #d4edda; border-color: #c3e6cb; }
+        .error { background: #f8d7da; border-color: #f5c6cb; }
+        .info { background: #d1ecf1; border-color: #bee5eb; }
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover { background: #0056b3; }
+    </style>
+</head>
+<body>
+    <h1>Theme Debug Tool</h1>
+    
+    <div class="test-section info">
+        <h3>Current Status</h3>
+        <div id="status"></div>
+    </div>
+    
+    <div class="test-section">
+        <h3>Actions</h3>
+        <button onclick="clearStorage()">Clear All Storage</button>
+        <button onclick="testDefaultTheme()">Test Default Theme</button>
+        <button onclick="openReactApp()">Open React App</button>
+        <button onclick="refreshStatus()">Refresh Status</button>
+    </div>
+    
+    <div class="test-section">
+        <h3>Test Results</h3>
+        <div id="results"></div>
+    </div>
+
+    <script>
+        function refreshStatus() {
+            const statusDiv = document.getElementById('status');
+            const theme = localStorage.getItem('theme');
+            const htmlClasses = document.documentElement.className;
+            
+            statusDiv.innerHTML = `
+                <p><strong>localStorage.theme:</strong> ${theme || 'null'}</p>
+                <p><strong>HTML classes:</strong> "${htmlClasses}"</p>
+                <p><strong>Has dark-theme class:</strong> ${document.documentElement.classList.contains('dark-theme')}</p>
+                <p><strong>Total localStorage items:</strong> ${localStorage.length}</p>
+            `;
+        }
+        
+        function clearStorage() {
+            localStorage.clear();
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.innerHTML = '<p style="color: green;">✓ Cleared all localStorage</p>';
+            refreshStatus();
+        }
+        
+        function testDefaultTheme() {
+            // Simulate the theme initialization logic from index.js
+            const storedTheme = localStorage.getItem("theme");
+            const htmlElement = document.querySelector("html");
+            
+            if (htmlElement) {
+                if (storedTheme) {
+                    // Apply stored theme preference
+                    if (storedTheme === "dark") {
+                        htmlElement.classList.add("dark-theme");
+                    } else {
+                        htmlElement.classList.remove("dark-theme");
+                    }
+                } else {
+                    // Default to dark theme for new users
+                    htmlElement.classList.add("dark-theme");
+                    localStorage.setItem("theme", "dark");
+                }
+            }
+            
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.innerHTML = '<p style="color: blue;">✓ Applied theme initialization logic</p>';
+            refreshStatus();
+        }
+        
+        function openReactApp() {
+            window.open('http://localhost:3000', '_blank');
+        }
+        
+        // Auto refresh on load
+        window.onload = refreshStatus;
+        
+        // Refresh every 2 seconds
+        setInterval(refreshStatus, 2000);
+    </script>
+</body>
+</html>
